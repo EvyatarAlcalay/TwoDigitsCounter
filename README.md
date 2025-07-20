@@ -60,7 +60,7 @@ To simulate the design:
 
 > If using DE10-Nano or similar boards, you can use the default constraints file (`.qsf`) to assign pins accordingly.
 
-# Assigning Pins in Quartus
+### Assigning Pins in Quartus
 To properly map the input/output pins for this project, please follow these steps:
 1. Make sure the target FPGA device for your project is set correctly (Assignment → Devices).
 2. In the window that opens, select the device model 5CSXFC6D6F31C6.
