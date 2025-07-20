@@ -60,6 +60,16 @@ To simulate the design:
 
 > If using DE10-Nano or similar boards, you can use the default constraints file (`.qsf`) to assign pins accordingly.
 
+# Assigning Pins in Quartus
+To properly map the input/output pins for this project, please follow these steps:
+1. Make sure the target FPGA device for your project is set correctly (Assignment → Devices).
+2. In the window that opens, select the device model 5CSXFC6D6F31C6.
+3. Compile and verify that your Top-Level Entity is the intended one (in our case, mainq1).
+4. Navigate to Assignment → Pin Planner.
+5. All inputs and outputs of your Top-Level Entity will be listed here. Assign the correct FPGA pins to each input/output according to the device datasheet.
+6. Pay attention that pins may not appear in a specific order, so double-check your assignments carefully.
+7. Re-compile the project after assigning the pins.
+
 ---
 
 ## ▶️ Running on Hardware
