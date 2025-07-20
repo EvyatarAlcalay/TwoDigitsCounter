@@ -66,9 +66,16 @@ To simulate the design:
 
 1. Compile the project in Quartus.
 2. Program the FPGA board using `.sof` file.
-3. Press and hold **KEY0** to reset the counter to 00.
-4. Release the reset — the counter will now increment **once per second**, displaying the value on HEX0 and HEX1.
-5. After reaching 99, the counter rolls back to 00 and repeats.
+3. Connect the FPGA board to power and your computer.
+4. Open Tools → Programmer.
+5. Under Hardware Setup, ensure the USB device is selected.
+6. Click Auto-Detect and select the second-to-last device in the list.
+7. Click Add File, navigate to the output folder, and select the .sof file.
+8. You should see three devices listed in the Programmer; delete the first one.
+9. Click Start to begin programming the FPGA.
+10. Press and hold **KEY0** to reset the counter to 00.
+11. Release the reset — the counter will now increment **once per second**, displaying the value on HEX0 and HEX1.
+12. After reaching 99, the counter rolls back to 00 and repeats.
 
 ---
 
